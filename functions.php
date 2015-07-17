@@ -96,7 +96,7 @@ function fabula_customizer( $wp_customize ) {
 	 
 	// add the section to contain the settings
 	$wp_customize->add_section( 'textcolors' , array(
-	    'title' =>  'Kanavan teemavärit',
+	    'title' =>  'Kanavan värimääritykset',
 	) );
 	
 	// main color ( h2-background )
@@ -110,14 +110,14 @@ function fabula_customizer( $wp_customize ) {
 	$txtcolors[] = array(
 	    'slug'=>'color_scheme_2', 
 	    'default' => '#666',
-	    'label' => 'Viivojen väri'
+	    'label' => 'Tehostenuolet'
 	);
 	
 	// secondary color ( channel-hr )
 	$txtcolors[] = array(
 	    'slug'=>'color_scheme_3', 
 	    'default' => '#666',
-	    'label' => 'Slider otsikko'
+	    'label' => 'Päätehosteväri'
 	);
 	
 	// add the settings and controls for each color
@@ -224,7 +224,7 @@ function fabula_customizer( $wp_customize ) {
 	$wp_customize->add_section( 'themeslug_logo_section' , array(
 	    'title'       => __( 'Logo', 'themeslug' ),
 	    'priority'    => 30,
-	    'description' => 'Upload a logo to replace the default site name and description in the header',
+	    'description' => 'Lataa kanavan logo tähän',
 	) );
 	
 	$wp_customize->add_setting( 'themeslug_logo' );
@@ -266,7 +266,11 @@ styling
     background-color:  <?php echo $color_scheme_1; ?>; 
 }
 
-	
+.media__body {
+  background: <?php echo $color_scheme_1; ?>;
+
+}
+
 .meta-nav .fa-angle-left, .meta-nav .fa-angle-right {
 	color: <?php echo $color_scheme_2; ?>;
 }

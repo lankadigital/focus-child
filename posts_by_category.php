@@ -22,10 +22,16 @@
 		            <div class="single-category-element animated fadeIn go"><a href="<?php the_permalink() ?>" class="thumbnail-wrapper">
 		            	<!-- <div class="time"></div> -->
 		            	<?php echo has_post_thumbnail() ? get_the_post_thumbnail() : focus_default_post_thumbnail();  ?>
+		            	
+		            	<div class="media__body">
+		            		<h3><?php the_title() ?></h3>
+		            		<?php the_excerpt() ?>
+		            	</div>
+		            	
 		            </a>
 		
 		            <a href="<?php the_permalink(); ?>"><h2 class="entry-title-category"><span>
-		            	<?php echo get_the_title() ? get_the_title() : __('Untitled', 'focus') ?>
+		            	<?php echo get_the_title() ? get_the_title() : __('Untitled', 'focus') ?><?php get_template_part('entry', 'meta'); ?>
 		            </span></h2></a></div>
 		        <?php
 		            endwhile; 

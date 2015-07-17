@@ -19,6 +19,9 @@
 	            <div class="single-category-element-index animated fadeIn go"><a href="<?php the_permalink() ?>" class="thumbnail-wrapper">
 	            	<!-- <div class="time"></div> -->
 	            	<?php echo has_post_thumbnail() ? get_the_post_thumbnail() : focus_default_post_thumbnail();  ?>
+	            	<div class="media__body">
+	            		<i class="fa fa-play-circle-o fa-4x"></i>
+	            	</div>
 	            </a>
             
 

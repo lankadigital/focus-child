@@ -33,7 +33,7 @@ get_header(); ?>
 					<div class="article-excerpt">
 						<p><?php the_excerpt('&raquo; &raquo; &raquo; &raquo;'); ?></p>
 						<a href="<?php echo get_permalink(); ?>"> Lue lisää...</a>
-						<p><?php get_template_part('entry', 'meta'); ?></p>
+						<!-- <p><?php get_template_part('entry', 'meta'); ?></p> -->
 					</div>	
 				</div>	
 				<hr class="channel-hr">
@@ -44,17 +44,5 @@ get_header(); ?>
 			</div>	
 		</div>	
 	</div>	
-		
-		<div class="container main-container">
-		
-			<div class="content-container">	
-				<?php get_template_part('posts_by_category'); ?>
-			</div>	
-		</div>
-		
-		<div class="container">
-			
-		</div>
-	</div><!-- #primary .content-area -->
 
 <?php get_footer(); ?>
