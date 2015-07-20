@@ -25,7 +25,8 @@
 		            	
 		            	<div class="media__body">
 		            		<h3><?php the_title() ?></h3>
-		            		<?php the_excerpt() ?>
+		            		<p><?php echo excerpt(17) ?></p>
+		            		<i class="fa fa-play-circle-o fa-2x"></i>
 		            	</div>
 		            	
 		            </a>

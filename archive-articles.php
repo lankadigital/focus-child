@@ -5,10 +5,10 @@ Template Name: Blog Posts Archive
 */
 
 get_header(); ?>
-
-	<?php get_template_part('article-slider') ?>
-
-	<?php echo get_post_type( $articles ); ?>
+	
+	<?php get_template_part('article-slider'); ?>
+	
+	<!-- <?php echo get_post_type( $articles ); ?> -->
 	
 	<div id="primary" class="content-area container articles-wrapper">
 		<div class="row">

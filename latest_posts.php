@@ -25,7 +25,8 @@
         	<?php echo has_post_thumbnail() ? get_the_post_thumbnail() : focus_default_post_thumbnail();  ?>
         	<div class="media__body">
         		<h3><?php the_title() ?></h3>
-        		<?php the_excerpt() ?>
+        		<p><?php echo excerpt(20) ?></p>
+        		<i class="fa fa-play-circle-o fa-2x"></i>
         	</div>
         </a>
 

@@ -219,6 +219,15 @@ function fabula_customizer( $wp_customize ) {
 	  'title' => __('Yhteystiedot','fabula'),
 	));
 	
+	/** Brand hr **/
+	
+	$wp_customize->add_setting('textarea8_setting', array('default' => 'kalastajankanava',));
+	$wp_customize->add_control(new Fabula_Customize_Textarea_Control($wp_customize, 'textarea8_setting', array(
+	  'label' => 'Kanavaviivan määrittäminen',
+	  'section' => 'textcolors',
+	  'settings' => 'textarea8_setting',
+	)));
+	
 	//** CHANGE LOGO **//
 	
 	$wp_customize->add_section( 'themeslug_logo_section' , array(
@@ -307,6 +316,17 @@ function focus_get_cat_slider_posts(){
 		'taxonomy' => 'category',
 	)));
 }
-	
+
+function excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt).'...';
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  }	
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  return $excerpt;
+}	
 
 ?>

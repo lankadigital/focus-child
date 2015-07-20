@@ -36,6 +36,7 @@ get_header(); the_post(); ?>
 					<h3 class="single-h3"><?php the_title() ?></h3>
 					<hr>
 					<?php the_content() ?>
+					<?php get_template_part('entry', 'meta'); ?>
 				</div>
 			</div>	
 		</div>
@@ -43,6 +44,7 @@ get_header(); the_post(); ?>
 	
 	<div class="container main-container">
 		<h3 class="single-h3">Katsoitko jo?</h3>
+		<hr class="channel-hr">
 		<div class="content-container">	
 			<?php get_template_part('nostot') ?>
 		</div>	

@@ -10,7 +10,7 @@
 						<div class="overlay"></div>
 						<div class="slider-wrapper">
 							<div class="container index-container">
-								<h1 class="index-h1 <?php echo siteorigin_setting('general_logo') ? 'image-logo' : '' ?>"> <?php focus_display_logo(); ?></h1>
+								<h1 class="index-h1"> <?php echo siteorigin_setting('general_logo') ? 'image-logo' : '' ?><?php focus_display_logo(); ?></h1>
 								<hr class="channel-hr">
 								<h3 class="index-h3">Blogi</h3>
 							</div>	
@@ -19,8 +19,6 @@
 				<?php endif; ?>
 			<?php endwhile ?>
 		</ul>
-		
-		<div class="slider-decoration"></div>
 	</section>
 	
 	<?php wp_reset_postdata(); ?>

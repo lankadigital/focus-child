@@ -14,7 +14,7 @@
 	
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
-			<hr class="loop-hr">
+			<hr class="<?php echo get_theme_mod( 'textarea8_setting', 'default_value' ); ?>-hr">
 			<div class="row footer-row">
 				<div class="col-md-4">
 					<h2>Olemme myös Somessa</h2>
