@@ -219,6 +219,17 @@ function fabula_customizer( $wp_customize ) {
 	  'title' => __('Yhteystiedot','fabula'),
 	));
 	
+	$wp_customize->add_setting('textarea9_setting', array('default' => 'Kanavan nimi',));
+	$wp_customize->add_control(new Fabula_Customize_Textarea_Control($wp_customize, 'textarea9_setting', array(
+	  'label' => 'Kanavan nimi',
+	  'section' => 'kanavan_nimi',
+	  'settings' => 'textarea9_setting',
+	)));
+	
+	$wp_customize->add_section('kanavan_nimi' , array(
+	  'title' => __('Kanavan nimi','fabula'),
+	));
+	
 	/** Brand hr **/
 	
 	$wp_customize->add_setting('textarea8_setting', array('default' => 'kalastajankanava',));

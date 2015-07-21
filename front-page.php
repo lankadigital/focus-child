@@ -18,7 +18,7 @@ get_header();
 		<div class="col-md-3"> -->
 			<div class="nav-bg container">
 				<ul class="nav nav-tabs subnav-tabs" role="tablist">
-					<li role="presentation" class="active xl-nav"><a href="#kanava_esittely" aria-controls="kanavaesittely" role="tab" data-toggle="tab">Kalastajan kanava</a></li>
+					<li role="presentation" class="active xl-nav"><a href="#kanava_esittely" aria-controls="kanavaesittely" role="tab" data-toggle="tab"><?php echo get_theme_mod( 'textarea9_setting', 'default_value' ); ?></a></li>
 					<li role="presentation" class="xl-nav"><a href="#viimeisimmat" aria-controls="vimmeisimmat" role="tab" data-toggle="tab">Viimeisimmät videot</a></li>
 					<li role="presentation" class="xl-nav"><a href="#sarjat" aria-controls="sarjat" role="tab" data-toggle="tab">Sarjat kanavalla</a></li>
 					<li role="presentation" class="xl-nav"><a href="#suosituimmat" aria-controls="suosituimmat" role="tab" data-toggle="tab">Suosituimmat videot</a></li>
