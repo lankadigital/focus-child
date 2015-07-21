@@ -1,12 +1,12 @@
 /*
 Theme Name: Fabula Fishing Theme
 Theme URI: http://fabulastudios.com
-GitHub Theme URI: lankadigital/lankavideo-wp
+GitHub Theme URI: lankadigital/focus-child
 Description: Child Theme for Focus
 Author: Niko Siirilä and Joonatan Rinne
 Author URI: http://fabulastudios.com
 Template: focus
-Version: 1.0.1
+Version: 1.1.0
 */
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
@@ -654,6 +654,16 @@ h2.archive-title{
 	margin-left: -15px;
 }
 
+.category-description-bg {
+	position: absolute;
+	width: 40%;
+	height: 95.4%;
+	top: 0px;
+	right: 15px;
+	background-color: rgba(0,0,0,0.84);
+	padding: 40px 20px 20px 20px;
+}
+
 /* @end */
 
 .thumbnail-wrapper img {
@@ -972,6 +982,16 @@ h2.archive-title{
   	padding: 16px;
   }
 }  
+
+
+@media (max-width: 761px) {
+  .category-description-bg {
+  	position: relative;
+  	width: 100%;
+    background-color: rgba(29, 29, 29, 1);
+    padding: 20px 20px 20px 20px;
+    right: 0px;
+  }
 
 @media (max-width: 641px) {
   .single-category-element {

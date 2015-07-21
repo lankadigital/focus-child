@@ -6,7 +6,7 @@
 			wp_enqueue_script( 'fishingjs', get_stylesheet_directory_uri() . '/js/fishing.js' );
 			wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css' );
 	    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-	
+			wp_enqueue_style( 'child-style', get_stylesheet_uri(), array('parent-style') );
 	}
 
 
@@ -280,7 +280,7 @@ styling
 
 }
 
-.meta-nav .fa-angle-left, .meta-nav .fa-angle-right {
+.meta-nav .fa-angle-left, .meta-nav .fa-angle-right, .index-more .fa {
 	color: <?php echo $color_scheme_2; ?>;
 }
 

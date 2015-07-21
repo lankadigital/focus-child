@@ -19,17 +19,17 @@ get_header(); the_post(); ?>
 
 		<div class="container main-container">
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-md-12">
 					<?php if(focus_post_has_video()) : ?>
 						<div class="video">
 							<?php focus_post_video() ?>
 						</div>
 					<?php endif; ?>
-				</div>
-				<div class="col-md-5">
-					<h2 class="cat-info-h2"><?php single_cat_title(''); ?></h2>
-					<hr>
-					<div><p class="cat-info-p"><?php echo category_description(); ?></p></div>
+					<div class="category-description-bg">
+						<h2 class="cat-info-h2"><?php single_cat_title(''); ?></h2>
+						<hr>
+						<div><p class="cat-info-p"><?php echo category_description(); ?></p></div>
+					</div>	
 				</div>
 			</div>		
 		</div>

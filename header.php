@@ -7,7 +7,9 @@
  * @package focus
  * @since focus 1.0
  */
-?><!DOCTYPE html>
+ $path = get_stylesheet_directory_uri();
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -17,9 +19,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://fishing.fabulastudios.com/wp-content/themes/focus-child/css/animations.css">
+	<link rel="stylesheet" href="<?php echo $path; ?>/css/animations.css">
 	
-	<?php wp_register_script( 'animateitjs', 'http://fishing.fabulastudios.com/wp-content/themes/focus-child/js/css3-animate-it.js', array('jquery'), 'v1.0', true ); ?>
+	<?php wp_register_script( 'animateitjs', $path . '/js/css3-animate-it.js', array('jquery'), 'v1.0', true ); ?>
 	<?php wp_enqueue_script( 'animateitjs' ); ?>
 	
 	<?php wp_head(); ?>
