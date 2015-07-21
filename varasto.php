@@ -90,3 +90,19 @@ $wp_customize->add_control(new Facebook_Customize_Textarea_Control($wp_customize
 $wp_customize->add_section('content' , array(
   'title' => __('Facebook','fabula'),
 ));
+
+
+
+
+
+
+
+<!-- <?php $args = array( 'post_type' => 'articles', 'posts_per_page' => 10 );
+$query = new WP_Query( $args );
+while ( $query->have_posts() ) : $query->the_post(); ?>
+<h3><?php if ( is_singular() ) {echo '<h3>';} else {echo '<h3>';} ?><a href="<?php the_permalink(); ?>" title="<?php printf( __( 'Lue %s', '' ), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a><?php if ( is_singular() ) {echo '</h3>';} else {echo '</h3>';} ?></h3>
+<hr>
+<?php if(has_post_thumbnail()) : ?>
+	<?php the_post_thumbnail('');?>
+<?php endif; ?>
+<h5 class="article-link"><?php echo excerpt(20) ; ?></h5> -->
