@@ -1,12 +1,12 @@
 /*
-Theme Name: Fabula Fishing Theme
+Theme Name: Fabula Channel Theme
 Theme URI: http://fabulastudios.com
 GitHub Theme URI: lankadigital/focus-child
 Description: Child Theme for Focus
 Author: Niko Siirilä and Joonatan Rinne
 Author URI: http://fabulastudios.com
 Template: focus
-Version: 1.1.1
+Version: 1.2.0
 */
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
@@ -62,7 +62,7 @@ a:hover {
 
 .meta-nav .fa-angle-left, .meta-nav .fa-angle-right {
 	font-size: 3.6em;
-	color: #00dbdb;
+	color: #666;
 }
 
 .meta-nav #posts-nav a {
@@ -102,6 +102,7 @@ body{
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
+	z-index: 10;
 }
 
 .main-container {
@@ -175,7 +176,6 @@ body{
 .slider,
 .slider .slide{
 	height: 520px;
-	z-index: 0 !important;
 }
 
 .slider-wrapper {
@@ -224,6 +224,11 @@ body{
 	font-weight: 200;
 	color: #FFF;
 	margin-top: 200px;
+}
+
+.contact-container {
+	margin-top: 0px !important;
+	height: 365px !important;
 }
 
 .box-header {
@@ -357,7 +362,7 @@ hr {
 
 .cat-content-container {
 	position: relative;
-	padding: 10px 30px 30px 30px;
+	padding: 30px;
 	background: #1d1d1d;
 	border: 0px;
 }
@@ -603,7 +608,7 @@ h2.archive-title{
 
 .index-more .fa {
 	display: inline;
-	color: #00dbdb;
+	color: #666;
 }
 
 .category-post-lister {
@@ -612,21 +617,11 @@ h2.archive-title{
 }
 
 .entry-title-category {
-	background-color: rgba(0, 145, 157, 1);
+	background-color: #666;
 	padding: 20px;
 	color: #FFFFFF !important;
 	text-decoration: none;
 	min-height: 92px;
-}
-
-.entry-title-category:hover {
-  background-color: #00c1c1;
-  color: #F4F4F4 !important;
-  -webkit-transition: background-color .2s ease-out, color .5s ease-in !important;
-  -webkit-transition: background-color .2s ease-out, background-color .5s ease-in !important;
-  -o-transition: background-color .2s ease-out, background-color .5s ease-in !important;
-    -ms-transition: background-color .2s ease-out, background-color .5s ease-in !important;
-    -moz-transition: background-color .2s ease-out, background-color .5s ease-in !important;
 }
 
 .cat-h3 {
@@ -749,11 +744,6 @@ h2.archive-title{
 .dropdown-menu-front>li:hover, .dropdown-menu-front>li>a:hover, .dropdown-menu-front>li>a:focus {
 	background-color: transparent !important;
 	border: 0px;
-}
-
-
-.grey-bg {
-	background-color: #5E5E5E;
 }
 
 .nav-previous-child, .nav-next-child {

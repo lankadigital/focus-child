@@ -32,7 +32,7 @@
             </div>
             <?php echo '<div class="col-md-6 col-xs-12 category-post-lister">';
             echo '<a href="' . get_category_link( $cat->term_id ) . '"><h3 class="cat-h3-index">' . $cat->name . '</h3></a>';
-            echo '<div class="cat-desc">' . $cat->description . '<br><a href="' . get_permalink() . '"> Katso lisää...</a></div></div>';
+            echo '<div class="cat-desc">' . word_trim( nl2br( category_description( $cat->term_id ) ), 35) . '<br><a href="' . get_permalink() . '"> Katso lisää...</a></div></div>';
             echo '<div class="col-md-2 index-more"><a href="' . get_category_link( $cat->term_id ) . '"><i class="fa fa-angle-right fa-5x"></i></a></div>';
             echo '</div>';
             ?>

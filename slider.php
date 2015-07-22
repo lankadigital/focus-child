@@ -29,7 +29,7 @@
 									</div>	
 									<!-- <hr class="slider-hr"> -->
 									<div class="box-excerpt-bg">
-										<span class="highlight-p"><?php if(has_excerpt()) : ?><?php the_excerpt() ?><?php endif; ?></span>
+										<span class="highlight-p"><?php if(has_excerpt()) : ?><p><?php echo excerpt(20) ?></p><?php endif; ?></span>
 									</div>	
 								</div></a>
 								<a href="<?php the_permalink() ?>" class="play"><?php esc_html_e('Play', 'focus') ?></a>

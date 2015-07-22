@@ -328,6 +328,7 @@ function focus_get_cat_slider_posts(){
 	)));
 }
 
+// Limited excerpt
 function excerpt($limit) {
   $excerpt = explode(' ', get_the_excerpt(), $limit);
   if (count($excerpt)>=$limit) {
@@ -338,6 +339,24 @@ function excerpt($limit) {
   }	
   $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
   return $excerpt;
-}	
+}
+
+// Word limited text
+function word_trim($text, $limit) {
+	$text = str_replace("  ", " ", $text);
+	$string = explode(" ", $text);
+	for ( $wordCounter = 0; $wordCounter <= $limit; $wordCounter++ ) {
+		$result .= $string[$wordCounter];
+		if ( $wordCounter < $limit ) {
+			$result .= " ";
+		}
+		else {
+			$result .= "...";
+		}
+	}
+	$result = trim($result);
+	
+	return $result;
+}
 
 ?>
