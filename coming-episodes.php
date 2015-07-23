@@ -23,6 +23,7 @@
 		            	<div class="media__body">
 		            		<h3><?php the_title() ?></h3>
 		            		<?php the_excerpt() ?>
+		            		<i class="fa fa-play-circle-o fa-2x"></i>
 		            	</div>
 		            </a>
 		
@@ -36,7 +37,7 @@
 		
 		<?php
 		        else :
-		            echo 'No post published in:'.$category->name;                
+		            echo 'Tulossa olevista videoista tiedotetaan myöhemmin:'.$category->name;                
 		        endif; 
 		        wp_reset_query();
 		

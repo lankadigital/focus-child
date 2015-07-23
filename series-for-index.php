@@ -1,12 +1,18 @@
 <?php
-    $allcats = get_categories('child_of=0&exclude=6,7'); 
+    
+    $tulossa = get_category_by_slug( 'tulossa' );
+    $tulossaId = $tulossa->term_id;
+    $nostot = get_category_by_slug( 'nostot' );
+    $nostotId = $nostot->term_id;
+    
+    $allcats = get_categories( array( 'child_of' => 0, 'exclude' => array( $tulossaId, $nostotId ) ) ); 
 
     foreach ($allcats as $cat) :
         $args = array(
             'posts_per_page' => 1, // set number of post per category here
             'category__in' => array($cat->term_id),
-            'orderby' => 'title',
-            'order'   => 'ASC'
+            'orderby' => 'modified',
+            'order'   => 'DESC'
         );
 
         $customInCatQuery = new WP_Query($args);

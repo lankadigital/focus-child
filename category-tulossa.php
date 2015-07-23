@@ -57,7 +57,7 @@ get_header(); the_post(); ?>
 		<div class="content-container">
 			<div id="content" class="site-content" role="main">
 				
-			<?php get_template_part('posts_by_category') ?>
+			<?php get_template_part('posts-by-category') ?>
 			
 			<div class="clear"></div>
 		</div>

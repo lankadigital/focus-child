@@ -18,20 +18,21 @@ get_header();
 		<div class="col-md-3"> -->
 			<div class="nav-bg container">
 				<ul class="nav nav-tabs subnav-tabs" role="tablist">
-					<li role="presentation" class="active xl-nav"><a href="#kanava_esittely" aria-controls="kanavaesittely" role="tab" data-toggle="tab"><?php echo get_theme_mod( 'textarea9_setting', 'default_value' ); ?></a></li>
-					<li role="presentation" class="xl-nav"><a href="#viimeisimmat" aria-controls="vimmeisimmat" role="tab" data-toggle="tab">Viimeisimmät videot</a></li>
-					<li role="presentation" class="xl-nav"><a href="#sarjat" aria-controls="sarjat" role="tab" data-toggle="tab">Sarjat kanavalla</a></li>
-					<li role="presentation" class="xl-nav"><a href="#suosituimmat" aria-controls="suosituimmat" role="tab" data-toggle="tab">Suosituimmat videot</a></li>
-					<li role="presentation" class="xl-nav"><a href="#tulossa" aria-controls="tulossa" role="tab" data-toggle="tab">Tulossa</a></li>
+					<li role="presentation" class="active xl-nav"><a href="#kanavaesittely" aria-controls="kanavaesittely" role="tab"><?php echo get_theme_mod( 'textarea9_setting', 'default_value' ); ?></a></li>
+					<li role="presentation" class="xl-nav"><a href="#viimeisimmat" aria-controls="vimmeisimmat" role="tab">Viimeisimmät videot</a></li>
+					<li role="presentation" class="xl-nav"><a href="#sarjat" aria-controls="sarjat" role="tab">Sarjat kanavalla</a></li>
+					<li role="presentation" class="xl-nav"><a href="#suosituimmat" aria-controls="suosituimmat" role="tab">Suosituimmat videot</a></li>
+					<li role="presentation" class="xl-nav"><a href="#tulossa" aria-controls="tulossa" role="tab">Tulossa</a></li>
 					<li role="presentation" class="dropdown dropdown-subnav">
 				        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 				          Selaa sisältöä<span class="caret"></span>
 				        </a>
 				        <ul class="dropdown-menu dropdown-menu-front" role="menu">
-				          <li><a href="#viimeisimmat" aria-controls="viimeisimmat" role="tab" data-toggle="tab">Viimeisimmät videot</a></li>
-				          <li><a href="#suosituimmat" aria-controls="suosituimmat" role="tab" data-toggle="tab">Suosituimmat videot</a></li>
-				          <li><a href="#sarjat" aria-controls="sarjat" role="tab" data-toggle="tab">Sarjat</a></li>
-				          <li><a href="#tulossa" aria-controls="tulossa" role="tab" data-toggle="tab">Tulossa</a></li>
+				        	<li><a href="#kanavaesittely" aria-controls="kanavaesittely" role="tab"><?php echo get_theme_mod( 'textarea9_setting', 'default_value' ); ?></a></li>
+				          	<li><a href="#viimeisimmat" aria-controls="viimeisimmat" role="tab">Viimeisimmät videot</a></li>
+				          	<li><a href="#suosituimmat" aria-controls="suosituimmat" role="tab">Suosituimmat videot</a></li>
+				          	<li><a href="#sarjat" aria-controls="sarjat" role="tab">Sarjat</a></li>
+				          	<li><a href="#tulossa" aria-controls="tulossa" role="tab">Tulossa</a></li>
 				        </ul>
 				    </li>
 				</ul>
@@ -43,7 +44,7 @@ get_header();
 				<div class="main-container container">
 					
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="kanava_esittely">
+						<div role="tabpanel" class="tab-pane active" id="kanavaesittely">
 							<div class="content-container loop-container">
 							<h3 class="cat-h3">Kanavaesittely</h3>
 							<hr class="channel-hr">
@@ -59,14 +60,14 @@ get_header();
 							<div class="content-container loop-container">
 								<h3 class="cat-h3">Viimeeksi kanavalle lisätyt videot:</h3>
 								<hr class="channel-hr">
-								<?php get_template_part('latest_posts')?>
+								<?php get_template_part('latest-posts')?>
 							</div>	
 						</div>
 						<div role="tabpanel" class="tab-pane" id="suosituimmat">
 							<div class="content-container loop-container">
 								<h3 class="cat-h3">Suosituimmat videot:</h3>
 								<hr class="channel-hr">
-								<?php get_template_part('popular_videos'); ?>
+								<?php get_template_part('popular-videos'); ?>
 							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane" id="sarjat">

@@ -1,17 +1,16 @@
 <?php
-	$recent_posts = wp_get_recent_posts( $args );
 	
-	$args = array( 'numberposts' => '1', 'tax_query' => array(
-			array(
-				'taxonomy' => 'post_format',
-				'field' => 'slug',
-				'terms' => 'post-format-aside',
-				'operator' => 'NOT IN',
-				'orderby' => 'date',
-				'order'   => 'ASC',
-				'posts_per_page' => 30
-			)
-	) );
+	$tulossa = get_category_by_slug( 'tulossa' );
+	$tulossaId = $tulossa->term_id;
+	$nostot = get_category_by_slug( 'nostot' );
+	$nostotId = $nostot->term_id;
+	
+	$args = array( 'numberposts' => '1',
+			'orderby' => 'date',
+			'order'   => 'DESC',
+			'posts_per_page' => 30,
+			'category__not_in' => array($tulossaId,$nostotId)
+	);
 	
 	$thisPostQuery = new WP_Query ($args);
 	

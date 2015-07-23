@@ -301,10 +301,12 @@ styling
 
 .subnav-tabs>li.active>a, .subnav-tabs>li.active>a:focus, .subnav-tabs>li.active>a:hover, .subnav-tabs>li>a:active {
 	border-top: 2px solid <?php echo $color_scheme_3; ?> !important;
+	border-bottom: 2px solid #1d1d1d !important;
 }
 
 .subnav-tabs>li>a:hover, .subnav-tabs>li>a:focus {
 	border-top: 2px solid <?php echo $color_scheme_3; ?> !important;
+	border-bottom: 2px solid #1d1d1d !important;
 }
 
 </style>
@@ -357,6 +359,15 @@ function word_trim($text, $limit) {
 	$result = trim($result);
 	
 	return $result;
+}
+
+// Customize Search Results title
+add_filter( 'wp_title', 'lanka_custom_search_title' );
+function lanka_custom_search_title( $title ) {
+	if ( is_search() ) {
+		return 'Hakutulokset: '. get_search_query();
+	}
+	return $title;
 }
 
 ?>

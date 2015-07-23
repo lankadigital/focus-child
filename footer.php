@@ -20,7 +20,9 @@
 					<h2>Olemme myös Somessa</h2>
 						<ul class="some ul-footer">
 							<li><a href="<?php echo get_theme_mod( 'textarea_setting', 'default_value' ); ?>" target="_blank" <i class="fa fa-some fa-twitter-square fa-1x"></i>Twitter</li></a>
+							<?php if ( get_theme_mod( 'textarea1_setting' ) == 'default_value' || preg_match('/^.*facebook\.com\/?$/', get_theme_mod( 'textarea1_setting' ) ) ) { } else { ?>
 							<li><a href="<?php echo get_theme_mod( 'textarea1_setting', 'default_value' ); ?>" target="_blank" <i class="fa fa-facebook-square fa-some fa-1x"></i>Facebook</li></a>
+							<?php } ?>
 							<li><a href="<?php echo get_theme_mod( 'textarea3_setting', 'default_value' ); ?>" target="_blank" <i class="fa fa-some fa-youtube-square fa-1x"></i>Youtube</li></a>
 						</ul>
 						

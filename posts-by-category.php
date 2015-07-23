@@ -1,13 +1,29 @@
 <?php 
+	
+	$tulossa = get_category_by_slug( 'tulossa' );
+	$tulossaId = $tulossa->term_id;
+	$nostot = get_category_by_slug( 'nostot' );
+	$nostotId = $nostot->term_id;
+	
 	$cats = get_the_category();
-	$category = $cats[0];
+	
+	if ( $cats[0]->term_id == $tulossaId || $cats[0]->term_id == $nostotId ) {
+		if ( $cats[1]->term_id == $tulossaId || $cats[1]->term_id == $nostotId ) {
+			$category = $cats[2];
+		}
+		else {
+			$category = $cats[1];
+		}
+	}
+	else {
+		$category = $cats[0];
+	}
 	
 	$args = array(
 		'posts_per_page' => 99,
 		'category__in' => array($category->term_id),
 		'orderby' => 'title',
-		'order' => 'ASC',
-		'exclude' => array('6,7')
+		'order' => 'ASC'
 		);
 		
 		$thisCategoryQuery = new WP_Query($args);
