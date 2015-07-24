@@ -3,6 +3,25 @@ Wordpress child theme extending the Focus theme by siteorigin intended for video
 
 ## Changelog
 
+### 1.3.2
+
+**TL;DR:** Bugfixes and minor tweaks
+
+* Files changed
+  * front-page.php
+    * Removed conflicting `data-toggle="tab"` from sub navigation links
+  * functions.php
+    * Renamed and properly enqueued main.js to match the change in filename
+  * js/fishing.js > js/main.js
+    * Changed filename to main.js
+    * Fixed sub navigation active states
+    * Shortened code by using variables instead of multiple `if` statements
+    * Made `hashchange` trigger on `$(document).ready` only if there is a hash
+    * Added smooth scrolling
+  * style.css
+    * Incremented version number
+    * Fixed sub navigation on certain screen widths
+
 ### 1.3.1
 
 **TL;DR:** Bugfixes and minor visual tweaks.
