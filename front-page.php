@@ -23,16 +23,16 @@ get_header();
 					<li role="presentation" class="xl-nav"><a href="#sarjat" aria-controls="sarjat" role="tab">Sarjat kanavalla</a></li>
 					<li role="presentation" class="xl-nav"><a href="#suosituimmat" aria-controls="suosituimmat" role="tab">Suosituimmat videot</a></li>
 					<li role="presentation" class="xl-nav"><a href="#tulossa" aria-controls="tulossa" role="tab">Tulossa</a></li>
-					<li role="presentation" class="dropdown dropdown-subnav">
+					<li role="presentation" class="dropdown dropdown-subnav" onclick="return true">
 				        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 				          Selaa sisältöä<span class="caret"></span>
 				        </a>
 				        <ul class="dropdown-menu dropdown-menu-front" role="menu">
-				        	<li><a href="#kanavaesittely" aria-controls="kanavaesittely" role="tab"><?php echo get_theme_mod( 'textarea9_setting', 'default_value' ); ?></a></li>
-				          	<li><a href="#viimeisimmat" aria-controls="viimeisimmat" role="tab">Viimeisimmät videot</a></li>
-				          	<li><a href="#suosituimmat" aria-controls="suosituimmat" role="tab">Suosituimmat videot</a></li>
-				          	<li><a href="#sarjat" aria-controls="sarjat" role="tab">Sarjat</a></li>
-				          	<li><a href="#tulossa" aria-controls="tulossa" role="tab">Tulossa</a></li>
+				        	<li><a href="#kanavaesittely" aria-controls="kanavaesittely" role="tab" data-toggle="tab"><?php echo get_theme_mod( 'textarea9_setting', 'default_value' ); ?></a></li>
+				          	<li><a href="#viimeisimmat" aria-controls="viimeisimmat" role="tab" data-toggle="tab">Viimeisimmät videot</a></li>
+				          	<li><a href="#suosituimmat" aria-controls="suosituimmat" role="tab" data-toggle="tab">Suosituimmat videot</a></li>
+				          	<li><a href="#sarjat" aria-controls="sarjat" role="tab" data-toggle="tab">Sarjat</a></li>
+				          	<li><a href="#tulossa" aria-controls="tulossa" role="tab" data-toggle="tab">Tulossa</a></li>
 				        </ul>
 				    </li>
 				</ul>

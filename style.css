@@ -6,7 +6,7 @@ Description: Child Theme for Focus
 Author: Niko Siirilä and Joonatan Rinne
 Author URI: http://fabulastudios.com
 Template: focus
-Version: 1.3.0
+Version: 1.3.1
 */
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
@@ -15,18 +15,22 @@ Version: 1.3.0
 
 /* @group Headings */
 
+
 h1,h2,h3,h4,h5,h6, .widget .widget-title{
 	clear: both;
-	font-family: 'American typewriter';
-	font-weight: 300;
+	font-family: 'Glegoo', serif;
 	color: #a3a3a3 !important;
 }
 
+body p {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 
 a, a:visited {
 	color: #5f5f5f;
 	text-decoration: none !important;
+	font-family: 'Glegoo', serif;
 	
 }
 
@@ -115,6 +119,7 @@ body{
 
 #secondary {
 	width: 100%;
+	border-left: 1px solid #6f6f6f;
 	
 }
 
@@ -137,7 +142,7 @@ body{
 }
 
 #masthead .site-title{
-	font-family: 'American typewriter';
+	font-family: 'Glegoo', serif;
 	color: #F2F2F2;
 	font-weight: 300;
 	font-size: 22px;
@@ -704,10 +709,9 @@ h2.archive-title{
 	padding: 20px 20px 20px 20px !important;
 	border-radius: 0px !important;
 	color: #FFFFFF !important;
-	font-weight: 200;
 	margin-right: 0px !important;
 	border-top: 4px solid transparent !important;
-	font-family: american typewriter;
+	font-family: 'Glegoo', serif;
 }
 
 .subnav-tabs>li>a {
@@ -1015,50 +1019,13 @@ h2.archive-title{
   .single-category-element {
     width: 50%;
   }
-
-@media (max-width: 641px) {
-  
-  .container {
-  	width: 100% !important;
-  	z-index: auto;
-  }
-  
-  .entry-title-category {
-  	max-width: 297px;
-  }
-  
-  .slider {
-  	height: 340px !important;
-  }
-  
-  .slider h1 {
-  	width: 70%;
-  }
-  
-  .box-excerprt-bg {
-  	width: 85%;
-  }
-  
-  .front-content {
-  	margin-top: 0px;
-  }
-  
-  .main-container {
-  	width: 100% !important;
-  }
-  
-  .slider .slide-text {
-  	width: 90% !important;
-  	left: 5%;
-  	margin-top: 50px;
-  }
   
   .subnav-tabs li {
   	width: 100% !important;
   }
   
   .single-info-container {
-  	margin: -60px 0px 25px 0px !important;
+  	margin: -35px 0px 25px 0px !important;
   }
   
   .xl-nav {
@@ -1075,6 +1042,43 @@ h2.archive-title{
   
   .nav .open>a {
   	background-color: #5E5E5E !important;
+  }
+  
+  .slider .slide-text {
+  	width: 90% !important;
+  	left: 0%;
+  	margin-top: 50px;
+  }
+  
+  .slider h1 {
+  	width: 70%;
+  }
+  
+  .box-excerprt-bg {
+  	width: 85% !important;
+  }
+
+@media (max-width: 641px) {
+  
+  .container {
+  	width: 100% !important;
+  	z-index: auto;
+  }
+  
+  .entry-title-category {
+  	max-width: 297px;
+  }
+  
+  .slider {
+  	height: 340px !important;
+  }
+  
+  .front-content {
+  	margin-top: 0px;
+  }
+  
+  .main-container {
+  	width: 100% !important;
   }
   
   .slider .wp-post-image, #single-header img {

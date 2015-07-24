@@ -3,6 +3,24 @@ Wordpress child theme extending the Focus theme by siteorigin intended for video
 
 ## Changelog
 
+### 1.3.1
+
+**TL;DR:** Bugfixes and minor visual tweaks.
+
+* Files changed
+  * front-page.php
+    * Fixes to sub navigation
+  * header.php
+    * Removed [Google Font](https://www.google.com/fonts) Aldrich
+    * Loaded [Google Font](https://www.google.com/fonts) Glegoo 
+  * js/fishing.js
+    * Fixes to sub navigation
+  * style.css
+    * Incremented version number
+    * Changed main heading font to Glegoo
+    * Styling fixes to sub navigation
+    * Other minor visual tweaks
+
 ### 1.3.0
 
 **TL;DR:** Made series page show a video tagged "intro", hid Facebook link if empty, customized search result page title, made theme more universally adaptable, fixed series description styling, added this changelog.
