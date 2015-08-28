@@ -710,7 +710,8 @@ h2.archive-title{
 	border-radius: 0px !important;
 	color: #FFFFFF !important;
 	margin-right: 0px !important;
-	border-top: 4px solid transparent !important;
+	border-top: 2px solid transparent !important;
+	border-bottom: 2px solid transparent !important;
 	font-family: 'Glegoo', serif;
 }
 

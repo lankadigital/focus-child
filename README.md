@@ -3,6 +3,16 @@ Wordpress child theme extending the Focus theme by siteorigin intended for video
 
 ## Changelog
 
+### 1.3.3
+
+**TL;DR:** Minor bugfixes
+
+* Files changed
+  * js/main.js
+    * Removed smooth scrolling due to jagginess
+  * style.css
+    * Fixed border styling in sub navigation
+
 ### 1.3.2
 
 **TL;DR:** Bugfixes and minor tweaks
